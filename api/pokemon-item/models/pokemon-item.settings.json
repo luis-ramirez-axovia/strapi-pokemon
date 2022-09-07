@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pokemon_items",
+  "info": {
+    "name": "PokemonItem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "types": {
+      "collection": "type"
+    },
+    "number": {
+      "type": "integer"
+    }
+  }
+}

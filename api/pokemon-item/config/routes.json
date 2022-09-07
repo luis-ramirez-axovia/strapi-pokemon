@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pokemon-items",
+      "handler": "pokemon-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemon-items/count",
+      "handler": "pokemon-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemon-items/:id",
+      "handler": "pokemon-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pokemon-items",
+      "handler": "pokemon-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pokemon-items/:id",
+      "handler": "pokemon-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pokemon-items/:id",
+      "handler": "pokemon-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
